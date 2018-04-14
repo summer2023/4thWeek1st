@@ -12,9 +12,9 @@ public class Library {
 
     }
 
-    public Library(StudentSql studentsql) {
+    /*public Library(StudentSql studentsql) {
         this.studentsql = studentsql;
-    }
+    }*/
 
     public void game() {
         Transcript transcript=new Transcript();
@@ -30,7 +30,7 @@ public class Library {
         switch (flag) {
             case 1: branch1(sc);break;
             case 2: branch2(sc);break;
-            case 3: exit();
+            case 3: sc.close();
         }
 
 
@@ -83,9 +83,7 @@ public class Library {
 
     }
 
-    public void exit() {
 
-    }
 
 
     public boolean judgementStudent(String string) {
